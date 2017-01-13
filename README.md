@@ -2,4 +2,4 @@
 
 Benjamin Oudin
 Jordan Barret
-Mohammed Loukili
+Mohamed Loukili
