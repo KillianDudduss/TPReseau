@@ -37,14 +37,22 @@ namespace BusinessLayer
         public bool CheckConnexionUser(string login, string password)
         {
             bool verif=false;
-            Utilisateur user = Manager.GetUtilisateurByLogin(login);
-            if (user!=null)
+            try
             {
-                if(user.getPassword()==password)
+                Utilisateur user = Manager.GetUtilisateurByLogin(login);
+                if (user != null)
                 {
-                    verif = true;
+                    if (user.getPassword() == password)
+                    {
+                        verif = true;
+                    }
                 }
             }
+            catch (NullReferenceException e)
+            {
+                Console.WriteLine(e.Message);
+            }
+
             return verif;
         }
     }
