@@ -3,3 +3,8 @@ C:\Users\simon\Desktop\ISIMA\ZZ2\2semestre\Service Web\projet\PokemonTournamentC
 C:\Users\simon\Desktop\ISIMA\ZZ2\2semestre\Service Web\projet\PokemonTournamentConsole\EntitiesLayer\obj\Debug\EntitiesLayer.csprojResolveAssemblyReference.cache
 C:\Users\simon\Desktop\ISIMA\ZZ2\2semestre\Service Web\projet\PokemonTournamentConsole\EntitiesLayer\obj\Debug\EntitiesLayer.dll
 C:\Users\simon\Desktop\ISIMA\ZZ2\2semestre\Service Web\projet\PokemonTournamentConsole\EntitiesLayer\obj\Debug\EntitiesLayer.pdb
+C:\Users\Benjamin\git\TPs_NET\projet\PokemonTournamentConsole\EntitiesLayer\bin\Debug\EntitiesLayer.dll
+C:\Users\Benjamin\git\TPs_NET\projet\PokemonTournamentConsole\EntitiesLayer\bin\Debug\EntitiesLayer.pdb
+C:\Users\Benjamin\git\TPs_NET\projet\PokemonTournamentConsole\EntitiesLayer\obj\Debug\EntitiesLayer.csprojResolveAssemblyReference.cache
+C:\Users\Benjamin\git\TPs_NET\projet\PokemonTournamentConsole\EntitiesLayer\obj\Debug\EntitiesLayer.dll
+C:\Users\Benjamin\git\TPs_NET\projet\PokemonTournamentConsole\EntitiesLayer\obj\Debug\EntitiesLayer.pdb

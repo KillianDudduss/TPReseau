@@ -5,3 +5,10 @@ C:\Users\simon\Desktop\ISIMA\ZZ2\2semestre\Service Web\projet\PokemonTournamentC
 C:\Users\simon\Desktop\ISIMA\ZZ2\2semestre\Service Web\projet\PokemonTournamentConsole\StubDataAccessLayer\obj\Debug\StubDataAccessLayer.csprojResolveAssemblyReference.cache
 C:\Users\simon\Desktop\ISIMA\ZZ2\2semestre\Service Web\projet\PokemonTournamentConsole\StubDataAccessLayer\obj\Debug\StubDataAccessLayer.dll
 C:\Users\simon\Desktop\ISIMA\ZZ2\2semestre\Service Web\projet\PokemonTournamentConsole\StubDataAccessLayer\obj\Debug\StubDataAccessLayer.pdb
+C:\Users\Benjamin\git\TPs_NET\projet\PokemonTournamentConsole\StubDataAccessLayer\bin\Debug\StubDataAccessLayer.dll
+C:\Users\Benjamin\git\TPs_NET\projet\PokemonTournamentConsole\StubDataAccessLayer\bin\Debug\StubDataAccessLayer.pdb
+C:\Users\Benjamin\git\TPs_NET\projet\PokemonTournamentConsole\StubDataAccessLayer\bin\Debug\EntitiesLayer.dll
+C:\Users\Benjamin\git\TPs_NET\projet\PokemonTournamentConsole\StubDataAccessLayer\bin\Debug\EntitiesLayer.pdb
+C:\Users\Benjamin\git\TPs_NET\projet\PokemonTournamentConsole\StubDataAccessLayer\obj\Debug\StubDataAccessLayer.csprojResolveAssemblyReference.cache
+C:\Users\Benjamin\git\TPs_NET\projet\PokemonTournamentConsole\StubDataAccessLayer\obj\Debug\StubDataAccessLayer.dll
+C:\Users\Benjamin\git\TPs_NET\projet\PokemonTournamentConsole\StubDataAccessLayer\obj\Debug\StubDataAccessLayer.pdb
