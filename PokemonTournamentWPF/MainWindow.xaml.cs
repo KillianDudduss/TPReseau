@@ -36,5 +36,10 @@ namespace PokemonTournamentWPF
         {
             ListResults.DataContext = _manager.getStade();
         }
+
+        private void Match_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

@@ -13,7 +13,7 @@
         <WrapPanel>
             <Button Height ="30" Background="#FFB82C2C" Content="Poke" Click="Poke_Click" />
             <Button Height="30" Background="#FFDEA234" Content="Stades" Click="Stade_Click"/>
-            <Button Height="30" Background="#FFD1D127" Content="Match"/>
+            <Button Height="30" Background="#FFD1D127" Content="Match" Click="Match_Click"/>
             <Button Height="30" Background="#FF3DD83D" Content="Cara"/>
             <Button Height="30" Background="#FF34C3C3" Content="Bonus"/>
             <Button Height="30" Background="#FFB426B4" Content="Export"/>
