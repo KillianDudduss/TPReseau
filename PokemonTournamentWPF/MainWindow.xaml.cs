@@ -39,7 +39,26 @@ namespace PokemonTournamentWPF
 
         private void Match_Click(object sender, RoutedEventArgs e)
         {
-
+            ListResults.DataContext = _manager.getMatch();
         }
+
+        private void Cara_Click(object sender, RoutedEventArgs e)
+        {
+            ListResults.DataContext = _manager.getCara();
+        }
+
+        private void Bonus_Click(object sender, RoutedEventArgs e)
+        {
+            ListResults.DataContext = _manager.getBonus();
+        }
+
+        //private void Export_Click(object sender, RoutedEventArgs e)
+        //{
+        //    ListResults.DataContext = _manager.getPokemonForceVie();
+        //    string filePath = "ENTER A VALID FILEPATH";
+        //    northwindDataSet.WriteXml(filePath);
+        //}
+
+
     }
 }

@@ -40,10 +40,34 @@ namespace BusinessLayer
                         select pokemon.Nom;
 
             return query.ToList();
-
 		}
-     
-        public bool CheckConnexionUser(string login, string password)
+
+
+        public List<String> getMatch()
+        {
+            var query = from Match in Manager.LsMatch
+                        select Match.ToString();
+            return query.ToList();
+        }
+
+
+        public List<String> getCara()
+        {
+            var query = from Pokemon in Manager.LsPokemon
+                        select Pokemon.Caracteristiques;
+            return query.ToList();
+        }
+
+
+        public List<String> getBonus()
+        {
+            var query = from Pokemon in Manager.LsPokemon
+                        select Pokemon.TypeElement;
+            return query.ToList();
+        }
+
+
+        public bool CheckConnexionUser(string name, string password)
         {
             bool verif=false;
             Utilisateur user = Manager.GetUtilisateurByLogin(login);
@@ -56,5 +80,10 @@ namespace BusinessLayer
             }
             return verif;
         }
-    }
+
+
+        public bool Add_Stade(String name, int number)
+        {
+            Stade = new Stade(int number, String name)
+        }
 }

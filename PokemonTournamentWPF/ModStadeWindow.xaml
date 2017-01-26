@@ -1,0 +1,47 @@
+﻿<Window x:Class="PokemonTournamentWPF.ModStadeWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PokemonTournamentWPF"
+        mc:Ignorable="d"
+        Title="ModStadeWindow" Height="300" Width="300">
+    <StackPanel Background="#FFF7793E">
+
+        <TextBlock>
+            Modification de Stade :
+        </TextBlock>
+
+        <TextBlock>
+        </TextBlock>
+
+        <WrapPanel>
+            <Button Height ="30" Background="#FFB82C2C" Content="Retour Menu Principale" Click="Menu_Click" />
+        </WrapPanel>
+
+        <TextBlock>
+        </TextBlock>
+
+        <TextBlock>
+            Nom du Stade à modifier :
+        </TextBlock>
+        <TextBox x:Name="name"  TextWrapping="Wrap" Width="156" FontFamily="Times New Roman" FontSize="18.667"/>
+
+        <TextBlock>
+        </TextBlock>
+
+        <TextBlock>
+            Nouveau nombre de Places :
+        </TextBlock>
+        <TextBox x:Name="number"  TextWrapping="Wrap" Width="156" FontFamily="Times New Roman" FontSize="18.667"/>
+
+        <TextBlock>
+        </TextBlock>
+
+        <TextBlock>
+            Caracteristique à ajouter :
+        </TextBlock>
+        <TextBox x:Name="cara" TextWrapping="Wrap" Width="156" FontFamily="Times New Roman" FontSize="18.667"/>
+
+    </StackPanel>
+</Window>

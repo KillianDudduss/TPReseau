@@ -28,7 +28,6 @@ namespace PokemonTournamentWPF
 
         BusinessLayer.BusinessManager _manager;
 
-
         private void connect_Click(object sender, RoutedEventArgs e)
         {
             if (_manager.CheckConnexionUser(log.Text.ToString(), pass.Password))
@@ -38,6 +37,5 @@ namespace PokemonTournamentWPF
                 this.Close();
             }
         }
-  
     }
 }

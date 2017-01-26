@@ -53,6 +53,26 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AddStadeWindow.xaml.cs">
+      <DependentUpon>AddStadeWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DelStadeWindow.xaml.cs">
+      <DependentUpon>DelStadeWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ModStadeWindow.xaml.cs">
+      <DependentUpon>ModStadeWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="StadeWindow.xaml.cs">
+      <DependentUpon>StadeWindow.xaml</DependentUpon>
+    </Compile>
+    <Page Include="AddStadeWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DelStadeWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="LoginWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -66,6 +86,14 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="MainWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ModStadeWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="StadeWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

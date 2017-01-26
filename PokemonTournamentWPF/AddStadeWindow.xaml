@@ -1,0 +1,57 @@
+﻿<Window x:Class="PokemonTournamentWPF.AddStadeWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PokemonTournamentWPF"
+        mc:Ignorable="d"
+        Title="AddStadeWindow" Height="347.727" Width="357.955">
+    <StackPanel Background="#FFF7793E">
+
+        <TextBlock>
+            Ajout de Stade :
+        </TextBlock>
+
+        <TextBlock>
+        </TextBlock>
+
+        <WrapPanel>
+            <Button Height ="30" Background="#FFB82C2C" Content="Retour Menu Principale" Click="Menu_Click" />
+        </WrapPanel>
+
+        <TextBlock>
+        </TextBlock>
+
+        <TextBlock>
+            Nom du Stade :
+        </TextBlock>
+        <TextBox x:Name="name"  TextWrapping="Wrap" Width="156" FontFamily="Times New Roman" FontSize="18.667"/>
+
+        <TextBlock>
+        </TextBlock>
+        
+        <TextBlock>
+            Nombre de Places :
+        </TextBlock>
+        <TextBox x:Name="number"  TextWrapping="Wrap" Width="156" FontFamily="Times New Roman" FontSize="18.667"/>
+
+        <TextBlock>
+        </TextBlock>
+        
+        <TextBlock>
+            Caracteristiques 1 du Stade :
+        </TextBlock>
+        <TextBox x:Name="cara1" TextWrapping="Wrap" Width="156" FontFamily="Times New Roman" FontSize="18.667"/>
+
+
+        <TextBlock>
+        </TextBlock>
+
+        <TextBlock>
+            Caracteristiques 2 du Stade :
+        </TextBlock>
+        <TextBox x:Name="cara2" TextWrapping="Wrap" Width="156" FontFamily="Times New Roman" FontSize="18.667"/>
+
+
+    </StackPanel>
+</Window>
