@@ -23,15 +23,18 @@ namespace PokemonTournamentWPF
         public MainWindow()
         {
             InitializeComponent();
+            BManager = new BusinessManager();
         }
+
+        private BusinessManager BManager;
 
         private void connect_Click(object sender, RoutedEventArgs e)
         {
-            if (BusinessLayer.BusinessManager.CheckConnexionUser(log.Text.ToString(), pass.Password))
+            if (BManager.CheckConnexionUser(log.Text.ToString(), pass.Password))
             {
                 MainWindow win = new MainWindow();
                 win.Show();
-                this.Close;
+                this.Close();
             }
         }
     }
