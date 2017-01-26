@@ -9,3 +9,5 @@ C:\Users\simon\Desktop\ISIMA\ZZ2\2semestre\Service Web\projet\PokemonTournamentC
 C:\Users\simon\Desktop\ISIMA\ZZ2\2semestre\Service Web\projet\PokemonTournamentConsole\PokemonTournamentConsole\obj\Debug\PokemonTournamentConsole.csprojResolveAssemblyReference.cache
 C:\Users\simon\Desktop\ISIMA\ZZ2\2semestre\Service Web\projet\PokemonTournamentConsole\PokemonTournamentConsole\obj\Debug\PokemonTournamentConsole.exe
 C:\Users\simon\Desktop\ISIMA\ZZ2\2semestre\Service Web\projet\PokemonTournamentConsole\PokemonTournamentConsole\obj\Debug\PokemonTournamentConsole.pdb
+C:\Users\Killian\Source\Repos\TPReseau\projet\PokemonTournamentConsole\PokemonTournamentConsole\obj\Debug\PokemonTournamentConsole.exe
+C:\Users\Killian\Source\Repos\TPReseau\projet\PokemonTournamentConsole\PokemonTournamentConsole\obj\Debug\PokemonTournamentConsole.pdb
