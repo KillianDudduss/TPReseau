@@ -1,0 +1,25 @@
+﻿<Window x:Class="PokemonTournamentWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PokemonTournamentWPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="300" Width="300">
+    <StackPanel >
+        <TextBlock>
+            Pouet Routament
+        </TextBlock>
+        <WrapPanel>
+            <Button Height ="30" Background="#FFB82C2C" Content="Poke" Click="Poke_Click" />
+            <Button Height="30" Background="#FFDEA234" Content="Stades" Click="Stade_Click"/>
+            <Button Height="30" Background="#FFD1D127" Content="Match" Click="Match_Click"/>
+            <Button Height="30" Background="#FF3DD83D" Content="Cara"/>
+            <Button Height="30" Background="#FF34C3C3" Content="Bonus"/>
+            <Button Height="30" Background="#FFB426B4" Content="Export"/>
+        </WrapPanel>
+        <ListView Name="ListResults" ItemsSource="{Binding}">
+            
+        </ListView>
+    </StackPanel>
+</Window>
