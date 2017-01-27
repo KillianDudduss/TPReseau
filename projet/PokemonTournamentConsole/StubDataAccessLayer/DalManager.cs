@@ -9,10 +9,10 @@ using EntitiesLayer;
 namespace StubDataAccessLayer
 {
 	public class DalManager {
-		public List<Pokemon> LsPokemon { get; }
-		public List<Dresseur> LsDresseur { get; }
+		public List<Pokemon> LsPokemon { get; set; }
+        public List<Dresseur> LsDresseur { get; }
 		public List<Match> LsMatch { get; }
-		public List<Stade> LsStade { get; }
+		public List<Stade> LsStade { get; set; }
 		public List<ECaracteristique> LsCaractéristique { get; }
         public List<Utilisateur> LsUtilisateur { get; }
 
@@ -24,17 +24,23 @@ namespace StubDataAccessLayer
 		}
 
 		public DalManager() {
-			List<Pokemon> LsPokemon = new List<Pokemon>();
-			List<Dresseur> LsDresseur = new List<Dresseur>();
-			List<Match> LsMatch = new List<Match>();
-			List<Stade> LsStade = new List<Stade>();
-			List<ECaracteristique> LsCaractéristique = new List<ECaracteristique>();
+			LsPokemon = new List<Pokemon>();
+            LsPokemon.Add(new Pokemon("Pika", ETypeElement.Electrique)); //ajoute pokemon temporaire pour test
+            LsPokemon.Add(new Pokemon("Salameche", ETypeElement.Feu));
+            LsPokemon.Add(new Pokemon("Carapuce", ETypeElement.Eau));
+            LsDresseur = new List<Dresseur>();
+            LsDresseur.Add(new Dresseur("Freddy"));
+			LsMatch = new List<Match>();
+            LsMatch.Add(new Match(new Pokemon("Pika", ETypeElement.Electrique), new Pokemon("raichu", ETypeElement.Electrique), EPhaseTournoi.DemiFinale));
+			LsStade = new List<Stade>();
+            LsStade.Add(new Stade(200, "Ligue"));
+            LsCaractéristique = new List<ECaracteristique>();
 		}
 
-        public Utilisateur GetUtilisateurByLogin(string login)
+        public Utilisateur GetUtilisateurByLogin(String plogin)
         {
             var query = from user in LsUtilisateur
-                        where user.getLogin() == login
+                        where user.getLogin() == plogin
                         select user;
             return (Utilisateur)query;
         }

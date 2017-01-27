@@ -6,24 +6,15 @@ using System.Threading.Tasks;
 
 namespace EntitiesLayer {
 	public class Dresseur : EntityObject {
-		private String _nom;
-		private String Nom {
-			get {
-				return _nom;
-			}
-			set {
-				_nom = Nom;
-			}
-		}
-		private int Score;
+		public String Nom { get; }
+		public int Score { get; }
 
-		public Dresseur(String nom) {
-			_nom = nom;
+		public Dresseur(String pnom) {
+			Nom = pnom;
 			Score = 0;
 		}
-
 		public override string ToString() {
-			return "Dresseur : " + Nom + " | score : " + Score + " points";
+			return ("Dresseur " + Nom + " ; score : " + Score + " points");
 		}
 	}
 }

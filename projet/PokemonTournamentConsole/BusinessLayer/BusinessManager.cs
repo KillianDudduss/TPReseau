@@ -11,15 +11,25 @@ namespace BusinessLayer
 {
     public class BusinessManager
     {
-		DalManager Manager;
+        public DalManager Manager { get; set; }
 
-		public List<String> getStade() {
-			var query = from stade in Manager.LsStade
-						select stade.Nom;
-			return query.ToList();
-		}
+        public BusinessManager() {
+            Manager = new DalManager();
+        }
 
-		public List<String> getPokemonByElem(ETypeElement elem) {
+        public List<Pokemon> getPokemon() {
+            return Manager.LsPokemon;
+        }
+
+        public List<Stade> getStade() {
+                return Manager.LsStade;
+        }
+
+        public List<Match> getMatch() {
+            return Manager.LsMatch;
+        }
+
+        public List<String> getPokemonByElem(ETypeElement elem) {
 			var query = from pokemonElem in Manager.getPokemonByElement(elem)
 						select pokemonElem.Nom;
 			return query.ToList();
@@ -27,11 +37,10 @@ namespace BusinessLayer
 
 		public List<String> getPokemonForceVie() {
 			var query = from pokemon in Manager.LsPokemon
-						where pokemon.Caracteristiques[(int)ECaracteristique.VIE] > 50 &&
+						where pokemon.Caracteristiques[(int)ECaracteristique.VIE] > 30 &&
 							  pokemon.Caracteristiques[(int)ECaracteristique.FORCE] > 3
 						select pokemon.Nom;
 			return query.ToList();
-
 		}
 
         public bool CheckConnexionUser(string login, string password)
@@ -54,6 +63,11 @@ namespace BusinessLayer
             }
 
             return verif;
+        }
+
+        public void ajouter_stade(int nbr, String name)
+        {
+            Manager.LsStade.Add(new Stade(nbr, name));
         }
     }
 }

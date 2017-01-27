@@ -9,8 +9,8 @@ namespace EntitiesLayer {
 		private Match[] Matchs;
 		private String Nom;
 
-		public Tournoi(String nom) {
-			Nom = nom;
+		public Tournoi(String pnom) {
+			Nom = pnom;
 		}
 	}
 }
