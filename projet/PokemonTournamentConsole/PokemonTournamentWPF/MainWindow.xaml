@@ -20,7 +20,7 @@
         <Label x:Name="password" Content="Password :" HorizontalAlignment="Left" Margin="59,210,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="18.667" Width="124" Height="41"/>
         <TextBox x:Name="log" HorizontalAlignment="Left" Height="44" Margin="240,124,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="211" FontFamily="Times New Roman" FontSize="18.667"/>
         <PasswordBox x:Name="pass" HorizontalAlignment="Left" Margin="240,210,0,0" VerticalAlignment="Top" Height="44" Width="211" FontFamily="Times New Roman" FontSize="18.667"/>
-        <Button x:Name="connect" Content="Se connecter" HorizontalAlignment="Left" Margin="180,292,0,0" VerticalAlignment="Top" Width="155" Height="50" BorderBrush="#FF786666" Background="#FFF7793E" Click="connect_Click"/>
+        <Button x:Name="BConnecter" Content="Se connecter" HorizontalAlignment="Left" Margin="180,292,0,0" VerticalAlignment="Top" Width="155" Height="50" BorderBrush="#FF786666" Background="#FFF7793E" Click="BConnecter_Click"/>
 
     </Grid>
 </Window>

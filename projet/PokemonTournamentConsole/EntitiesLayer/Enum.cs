@@ -6,14 +6,13 @@ using System.Threading.Tasks;
 
 namespace EntitiesLayer {
 	public enum ETypeElement {
-		Eau, Feu, Terre, Insecte, Plante, Tonnerre
+		Eau, Feu, Plante, Roche, Sol, Insecte, Electrique, Glace, Psy, 
 	}
-
-	public enum ECaracteristique {
-		VIE, FORCE, AGILITE, ENDURANCE, VITESSE
-	}
-
+    public enum ECaracteristique
+    {
+        VIE, FORCE, AGILITE, ENDURANCE, VITESSE
+    }
 	public enum EPhaseTournoi {
-		QuartFinale, HuitiemeFinale, DemiFinale, Finale
+        HuitiemeFinale, QuartFinale, DemiFinale, Finale
 	}
 }

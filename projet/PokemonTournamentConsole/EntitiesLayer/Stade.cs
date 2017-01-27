@@ -6,37 +6,35 @@ using System.Threading.Tasks;
 
 namespace EntitiesLayer {
 	public class Stade : EntityObject {
-		private int[] Caracteristiques; // Acces aux éléments via l'enum
-		private int NbPlaces;
-		public String Nom { get; }
+        public int[] Caracteristiques { get; set; }
+        public int NbPlaces { get; set; }
+        public String Nom { get; }
 
-		public Stade(int nbPlace, String nom) {
+		public Stade(int pnbPlaces, String pnom) {
 			Caracteristiques = new int[Enum.GetNames(typeof(ECaracteristique)).Length];
-			//Stade sans effet particulier par defaut
 			foreach (int i in Caracteristiques) {
 				Caracteristiques[i] = 0;
 			}
-			NbPlaces = nbPlace;
-			Nom = nom;
+			NbPlaces = pnbPlaces;
+			Nom = pnom;
 		}
 
-		public Stade(int nbPlace, String nom, ECaracteristique caract, int value) {
+		public Stade(int pnbPlaces, String pnom, ECaracteristique pcarac, int pbonus) {
 			Caracteristiques = new int[Enum.GetNames(typeof(ECaracteristique)).Length];
-			//Stade sans effet particulier par defaut
 			foreach (int i in Caracteristiques) {
 				Caracteristiques[i] = 0;
 			}
-			Caracteristiques[(int)caract] = value;
-			NbPlaces = nbPlace;
-			Nom = nom;
+			Caracteristiques[(int)pcarac] = pbonus;
+			NbPlaces = pnbPlaces;
+			Nom = pnom;
 		}
 
-		public void addCaracteristique(ECaracteristique caract, int value) {
-			Caracteristiques[(int)caract] += value;
+		public void addCaracteristique(ECaracteristique pcarac, int pbonus) {
+			Caracteristiques[(int)pcarac] += pbonus;
 		}
 
 		public override string ToString() {
-			return "Stade : " + Nom + " disposant de " + NbPlaces + " places";
+			return ("Stade " + Nom + " " + NbPlaces + " places");
 		}
 	}
 }

@@ -9,16 +9,16 @@ using EntitiesLayer;
 namespace PokemonTournamentConsole {
 	class Program {
 		static void Main(string[] args) {
-			Pokemon pika = new Pokemon("Pikachu", ETypeElement.Tonnerre);
-			Console.WriteLine(pika);
-			Pokemon carapuce = new Pokemon("Carapute", ETypeElement.Eau);
-			Console.WriteLine(carapuce);
-			Pokemon salameche = new Pokemon("Samlaleche", ETypeElement.Feu);
-			Console.WriteLine(salameche);
+			Pokemon Elector = new Pokemon("Elector", ETypeElement.Electrique);
+			Console.WriteLine(Elector);
+			Pokemon Laggron = new Pokemon("Laggron", ETypeElement.Eau);
+			Console.WriteLine(Laggron);
+			Pokemon Salameche = new Pokemon("Salameche", ETypeElement.Feu);
+			Console.WriteLine(Salameche);
 
-			Match match1 = new Match(ref pika, ref carapuce);
-			Match match2 = new Match(ref salameche, ref carapuce, EPhaseTournoi.DemiFinale);
-			Match match3 = new Match(new Pokemon("Bulbazar", ETypeElement.Feu), new Pokemon("Lipoutou", ETypeElement.Feu));
+			Match match1 = new Match(ref Elector, ref Laggron);
+			Match match2 = new Match(ref Salameche, ref Laggron, EPhaseTournoi.DemiFinale);
+			Match match3 = new Match(new Pokemon("Bulbizarre", ETypeElement.Plante), new Pokemon("Kadabra", ETypeElement.Psy));
 			Console.WriteLine(match1);
 			Console.WriteLine(match2);
 			Console.WriteLine(match3);
@@ -28,7 +28,7 @@ namespace PokemonTournamentConsole {
 			Console.WriteLine(stade1);
 			Console.WriteLine(stade2);
 
-			Dresseur dresseur1 = new Dresseur("Sachatte");
+			Dresseur dresseur1 = new Dresseur("Sacha");
 			Dresseur dresseur2 = new Dresseur("Ondine");
 			Console.WriteLine(dresseur1);
 			Console.WriteLine(dresseur2);

@@ -7,37 +7,25 @@ namespace EntitiesLayer
 {
     public class Utilisateur
     {
-        private string nom;
-        private string prenom;
-        private string login;
-        private string password;
+        public String Nom { get; }
+        public String Prenom { get; }
+        public String Login;
+        public String Password { get; }
 
-        public Utilisateur(string nom, string prenom, string login, string password)
+        public Utilisateur(String pnom, String pprenom, String plogin, String ppassword)
         {
-            this.nom = nom;
-            this.prenom = prenom;
-            this.login = login;
-            this.password = password;
+            Nom = pnom;
+            Prenom = pprenom;
+            Login = plogin;
+            Password = ppassword;
         }
 
-        public string getNom()
-        {
-            return nom;
+        public String getLogin() {
+            return Login;
         }
 
-        public string getPrenom()
-        {
-            return prenom;
-        }
-
-        public string getLogin()
-        {
-            return login;
-        }
-
-        public string getPassword()
-        {
-            return password;
+        public String getPassword() {
+            return Password;
         }
     }
 }
