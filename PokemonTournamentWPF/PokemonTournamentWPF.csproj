@@ -53,54 +53,47 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="AddStadeWindow.xaml.cs">
-      <DependentUpon>AddStadeWindow.xaml</DependentUpon>
+    <Compile Include="PokeWindow.xaml.cs">
+      <DependentUpon>PokeWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="DelStadeWindow.xaml.cs">
-      <DependentUpon>DelStadeWindow.xaml</DependentUpon>
+    <Compile Include="TournoiWindow.xaml.cs">
+      <DependentUpon>TournoiWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ModStadeWindow.xaml.cs">
-      <DependentUpon>ModStadeWindow.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="StadeWindow.xaml.cs">
-      <DependentUpon>StadeWindow.xaml</DependentUpon>
-    </Compile>
-    <Page Include="AddStadeWindow.xaml">
+    <Page Include="AddPokemon.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="DelStadeWindow.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="LoginWindow.xaml">
+    <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Compile Include="AddPokemon.xaml.cs">
+      <DependentUpon>AddPokemon.xaml</DependentUpon>
+    </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="LoginWindow.xaml.cs">
-      <DependentUpon>LoginWindow.xaml</DependentUpon>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="MainWindow.xaml">
+    <Page Include="Menu.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ModStadeWindow.xaml">
-      <SubType>Designer</SubType>
+    <Page Include="PokeWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
-    <Page Include="StadeWindow.xaml">
-      <SubType>Designer</SubType>
+    <Page Include="TournoiWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
+    <Compile Include="Menu.xaml.cs">
+      <DependentUpon>Menu.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
@@ -133,6 +126,10 @@
     <ProjectReference Include="..\EntitiesLayer\EntitiesLayer.csproj">
       <Project>{767ed684-074b-4c27-b469-4b57d55d6b4d}</Project>
       <Name>EntitiesLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StubDataAccessLayer\StubDataAccessLayer.csproj">
+      <Project>{c3c87537-2af5-4ec3-8bf3-d65f156cdc17}</Project>
+      <Name>StubDataAccessLayer</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
